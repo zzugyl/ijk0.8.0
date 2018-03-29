@@ -29,14 +29,14 @@
 
 #include "ijkmeta.h"
 
-#ifndef MPTRACE
-#define MPTRACE ALOGD
-#endif
-
 // add By Jeffer 
 // close log
 #define NLOGD(...)
 #define MPTRACE NLOGD
+
+#ifndef MPTRACE
+#define MPTRACE ALOGD
+#endif
 
 typedef struct IjkMediaPlayer IjkMediaPlayer;
 struct FFPlayer;

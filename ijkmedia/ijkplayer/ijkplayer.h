@@ -222,4 +222,8 @@ void           *ijkmp_set_weak_thiz(IjkMediaPlayer *mp, void *weak_thiz);
 /* need to call msg_free_res for freeing the resouce obtained in msg */
 int             ijkmp_get_msg(IjkMediaPlayer *mp, AVMessage *msg, int block);
 
+//For AEC
+bool ijkmp_get_aec_status(IjkMediaPlayer *mp);
+void ijkmp_set_aec_status(IjkMediaPlayer *mp, bool isOpened);
+
 #endif

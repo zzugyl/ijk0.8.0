@@ -33,6 +33,11 @@
 #define MPTRACE ALOGD
 #endif
 
+// add By Jeffer 
+// close log
+#define NLOGD(...)
+#define MPTRACE NLOGD
+
 typedef struct IjkMediaPlayer IjkMediaPlayer;
 struct FFPlayer;
 struct SDL_Vout;
